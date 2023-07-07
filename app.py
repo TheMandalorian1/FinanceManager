@@ -52,7 +52,7 @@ def main():
         html(html_report, height=500)
 
         pdf_report = generate_pdf_report(remaining_amount, interval_result)
-        with st.beta_expander("Download Report"):
+        with st.expander("Download Report"):
             st.write("Click the button below to download the report as a PDF file.")
             st.download_button(
                 label="Download PDF Report",
